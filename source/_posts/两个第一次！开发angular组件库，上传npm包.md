@@ -23,17 +23,15 @@ https://blog.angularindepth.com/creating-a-library-in-angular-6-87799552e7e5
 遇到的问题：
 1. 头个问题就是纯傻，依赖的wangeditor没能自动install。我以为在angular项目里添加依赖包就可以了，实则不然，应该在project里进行安装（记得设置.gitignore）。
 2. 试图配置到peerDependencies里面，依然没能自动install，查资料应该是npm2与npm3对peerDependencies的实现是有差异的，描述如下：
-
-http://link.zhihu.com/?target=https%3A//github.com/npm/npm/issues/6565
-​
-这里给的方案是按提示手动npm install，然而洒家并不能认同这种结果。
-遇事不决问大哥：
-https://www.zhihu.com/people/sangka/activities
+    http://link.zhihu.com/?target=https%3A//github.com/npm/npm/issues/6565
+    这里给的方案是按提示手动npm install，然而洒家并不能认同这种结果。
+    遇事不决问大哥：
+    https://www.zhihu.com/people/sangka/activities
 
 3. 还是要放在dependencies里。又报错，什么什么wangeditor不在白名单......
-https://stackoverflow。com/questions/51216616/what-is-the-proper-way-to-use-a-dependent-npm-package-in-angular-6-library-proje
-​
-ng-package.json里配置whitelistedNonPeerDependencies，好用了。
+    https://stackoverflow。com/questions/51216616/what-is-the-proper-way-to-use-a-dependent-npm-package-in-angular-6-library-proje
+    ​
+    ng-package.json里配置whitelistedNonPeerDependencies，好用了。
 
 剩下的一个问题就是如何布置针对组件库的css，首先我不想每个组件都手动引入，其次不希望暴漏给整个项目，以免冲突，待后续调查~
 
