@@ -13,3 +13,18 @@
 @import '_partial/archive.scss';
 @import '_partial/about.scss';
 @import '_partial/tagcloud.scss';
+
+.content img{
+    display: block;
+    margin: 0 auto;
+}
+
+.project-card {
+    .imgWrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color:white;
+        img{height: auto}
+    }
+}
