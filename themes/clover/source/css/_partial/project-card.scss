@@ -2,15 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 100px;
-  margin: 40px 0;
+  padding: 30px 100px;
+  margin: 20px 0;
   background-color: white;
   color: #333;
   > .imgWrap {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 320px;
+    width: 360px;
     height: 240px;
     margin-right: 40px;
     background-color: white;
@@ -20,6 +20,7 @@
     }
   }
   > .ctnWrap {
+    text-align: center;
     flex: 1;
     > .title {
       font-weight: 600;
