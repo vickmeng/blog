@@ -54,8 +54,23 @@ $brand-color: #f0534e;
       margin: 15px 0;
       margin-left:15px;
       > li {
-        padding-left: 20px;
         position: relative;
+        // &::before {
+        //   content: '';
+        //   position: absolute;
+        //   left: 0;
+        //   top: 15px;
+        //   margin-top: -3px;
+        //   width: 6px;
+        //   height: 6px;
+        //   border-radius: 100%;
+        //   background-color: #444;
+        // }
+      }
+    }
+    ul{
+      > li {
+        padding-left: 20px;
         &::before {
           content: '';
           position: absolute;

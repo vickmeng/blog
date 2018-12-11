@@ -35,7 +35,10 @@ footer, header, hgroup, main, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+/* ol, ul {
+	list-style: none;
+} */
+ul {
 	list-style: none;
 }
 blockquote, q {
