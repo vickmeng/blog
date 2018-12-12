@@ -34,8 +34,11 @@ Z搜永远能把你的问题变成更多问题:
 2. asObservable是个啥？
 
 ## 问题一
-[这篇文章](https://medium.com/@benlesh/on-the-subject-of-subjects-in-rxjs-2b08b7198b93)对Suject的使用场景有明确的介绍：
->...this is the primary use case for Subjects in RxJS.
+开篇文章结尾处对Suject的使用场景有明确的介绍：
+>## When to use Subject
+>You need to share the same observable execution.
+>When you need to decide what to do when an observer arrives late, do we use ReplaySubject, BehaviorSubject?
+>You need full control over the next(), error() and complete() methods.
 
 Subject是仅为多播而存在的，我的用法属实不对，但这并没有解决我的问题，我在[RxJS 中文社区](https://github.com/RxJS-CN),找到了另一篇文章:[[译]关于 RxJS 中的 Subject](https://github.com/RxJS-CN/rxjs-articles-translation/blob/master/articles/On-The-Subject-Of-Subjects.md)。
 
