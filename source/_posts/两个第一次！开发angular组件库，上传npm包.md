@@ -1,7 +1,7 @@
 ---
 title: 两个第一次！
 date: 2018-12-10 15:42:41
-excerpt: 开发angular组件库，上传npm包
+tag: 开源angular组件库 传npm包
 photos:
 - ./img/packages.jpg
 
